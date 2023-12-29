@@ -1,21 +1,25 @@
 {
     "format_version": 2,
+    "metadata": {
+        "authors": ["Darth Buddha"],
+        "url": "https://github.com/DarthBuddha/buddha-script_redstone"
+    },
     "header": {
-        "name": "Redstone v1.0.0",
-        "description": "Buddha-Script Redstone Behavior Pack.",
+        "name": "pack.name",
+        "description": "pack.description",
         "version": [1, 0, 0],
         "min_engine_version": [1, 20, 50],
         "uuid": "f62196a3-be56-43b2-a18c-a9d00d00836e"
     },
     "modules": [
         {
-            "description": "Buddha-Script Redstone Data",
+            "description": "Redstone Data Module",
             "type": "data",
             "uuid": "92f24988-2319-46e4-848c-e5696b734be8",
             "version": [1, 0, 0]
         },
         {
-            "description": "Buddha-Script Redstone Script",
+            "description": "Redstone Script Module",
             "type": "script",
             "language": "javascript",
             "entry": "scripts/main.js",
@@ -24,10 +28,6 @@
         }
     ],
     "dependencies": [
-        {
-            "uuid": "f74c9156-0d06-4fc5-aee1-bcc0adb6bbda",
-            "version": [1, 0, 0]
-        },
         {
             "module_name": "@minecraft/server",
             "version": "1.8.0-beta"
