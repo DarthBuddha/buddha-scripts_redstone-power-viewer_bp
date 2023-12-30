@@ -1,9 +1,13 @@
-# Buddha-Script: View-Redstone-Power Behavior-Pack
+# Buddha-Scripts: View-Redstone-Power Behavior-Pack
 
-##
+## Behavior-Pack
 
-###
+This Minecraft Bedrock behavior pack.
 
-####
+Allows you to view the power of redstone circuits.
 
-##### Buddha-Script by Darth Buddha
+### Install
+
+#### Contribute
+
+##### Buddha-Scripts by Darth Buddha

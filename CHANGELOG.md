@@ -1,9 +1,11 @@
-# Buddha-Script: View-Redstone-Power Behavior-Pack
+# Buddha-Scripts: View-Redstone-Power Behavior-Pack
 
-##
+## Change-Log
 
-###
+### **Version 0.0.1**
 
-####
+- Initial Git Comment
 
-##### Buddha-Script by Darth Buddha
+#### Buddha-Scripts
+
+##### Buddha-Scripts by Darth Buddha
