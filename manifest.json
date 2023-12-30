@@ -5,25 +5,25 @@
         "url": "https://github.com/DarthBuddha/buddha-script_redstone"
     },
     "header": {
+        "version": [1, 0, 0],
         "name": "pack.name",
         "description": "pack.description",
-        "version": [1, 0, 0],
         "min_engine_version": [1, 20, 50],
         "uuid": "f62196a3-be56-43b2-a18c-a9d00d00836e"
     },
     "modules": [
         {
-            "description": "Redstone Data Module",
+            "version": [1, 0, 0],
             "type": "data",
-            "uuid": "92f24988-2319-46e4-848c-e5696b734be8",
-            "version": [1, 0, 0]
+            "description": "Data Module",
+            "uuid": "92f24988-2319-46e4-848c-e5696b734be8"
         },
         {
-            "description": "Redstone Script Module",
+            "version": [1, 0, 0],
             "type": "script",
+            "description": "Script Module",
             "language": "javascript",
             "entry": "scripts/main.js",
-            "version": [1, 0, 0],
             "uuid": "92f24988-2319-46e4-848c-e5696b734be8"
         }
     ],

@@ -1,3 +1,5 @@
+/* Buddha-Script_Redstone */
+
 import * as mc from "@minecraft/server";
 
 mc.system.runInterval(() => {
