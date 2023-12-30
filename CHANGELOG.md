@@ -1,3 +1,9 @@
-# Buddha-Script: View Redstone Power
+# Buddha-Script: View-Redstone-Power Behavior-Pack
 
-##### Darth Buddha
+##
+
+###
+
+####
+
+##### Buddha-Script by Darth Buddha
