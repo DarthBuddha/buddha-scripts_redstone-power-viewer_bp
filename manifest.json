@@ -9,14 +9,14 @@
         "name": "pack.name",
         "description": "pack.description",
         "min_engine_version": [1, 20, 50],
-        "uuid": "f62196a3-be56-43b2-a18c-a9d00d00836e"
+        "uuid": "527cab0c-ef61-4395-850a-e24619dcf461"
     },
     "modules": [
         {
             "version": [1, 0, 0],
             "type": "data",
             "description": "Data Module",
-            "uuid": "92f24988-2319-46e4-848c-e5696b734be8"
+            "uuid": "2472b9dc-3232-4dec-ab98-48772fe147c0"
         },
         {
             "version": [1, 0, 0],
@@ -24,7 +24,7 @@
             "description": "Script Module",
             "language": "javascript",
             "entry": "scripts/main.js",
-            "uuid": "92f24988-2319-46e4-848c-e5696b734be8"
+            "uuid": "2158b5bd-dffb-4e15-a696-f9e520a00e89"
         }
     ],
     "dependencies": [

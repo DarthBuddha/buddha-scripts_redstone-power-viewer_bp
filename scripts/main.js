@@ -1,12 +1,11 @@
 /* Buddha-Script_Redstone */
-
+// Library: Minecraft
 import * as mc from "@minecraft/server";
-
+// START CODE
 mc.system.runInterval(() => {
     const players = mc.world.getAllPlayers();
     for (let player of players) {
         const blockHit = player.getBlockFromViewDirection();
-
         // Ensure blockHit is valid
         if (!blockHit) {
             // Reset lastRedstonePower if no block is in view
@@ -16,10 +15,8 @@ mc.system.runInterval(() => {
             }
             continue;
         }
-
         const block = blockHit.block;
         const redstonePower = block.getRedstonePower();
-
         // Update action bar only if redstone power has changed
         if (player.lastRedstonePower !== redstonePower) {
             if (redstonePower >= 0) {
@@ -32,3 +29,4 @@ mc.system.runInterval(() => {
         }
     }
 }, 2);
+// END CODE
