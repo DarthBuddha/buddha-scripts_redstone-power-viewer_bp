@@ -1,32 +1,26 @@
-/* Buddha-Script_Redstone */
-// Library: Minecraft
-import * as mc from "@minecraft/server";
-// START CODE
-mc.system.runInterval(() => {
-    const players = mc.world.getAllPlayers();
-    for (let player of players) {
+// buddha-script_redstone-power-viewer
+import { system, world } from "@minecraft/server";
+
+// Use a Map to store last redstone power for each player
+const lastRedstonePowerMap = new Map();
+
+system.runInterval(() => {
+    world.getAllPlayers().forEach(player => {
         const blockHit = player.getBlockFromViewDirection();
-        // Ensure blockHit is valid
         if (!blockHit) {
-            // Reset lastRedstonePower if no block is in view
-            if (player.lastRedstonePower !== undefined) {
+            if (lastRedstonePowerMap.has(player.name)) {
                 player.onScreenDisplay.setActionBar("");
-                player.lastRedstonePower = undefined;
+                lastRedstonePowerMap.delete(player.name);
             }
-            continue;
+            return;
         }
-        const block = blockHit.block;
-        const redstonePower = block.getRedstonePower();
-        // Update action bar only if redstone power has changed
-        if (player.lastRedstonePower !== redstonePower) {
-            if (redstonePower >= 0) {
-                player.onScreenDisplay.setActionBar(`${redstonePower}`);
-            } else {
-                // Clear the action bar if no redstone power
-                player.onScreenDisplay.setActionBar("");
-            }
-            player.lastRedstonePower = redstonePower;
+
+        const redstonePower = blockHit.block.getRedstonePower();
+        const lastRedstonePower = lastRedstonePowerMap.get(player.name);
+
+        if (lastRedstonePower !== redstonePower) {
+            player.onScreenDisplay.setActionBar(redstonePower >= 0 ? `${redstonePower}` : "");
+            lastRedstonePowerMap.set(player.name, redstonePower);
         }
-    }
-}, 2);
-// END CODE
+    });
+}, 10); // Consider increasing the interval for performance

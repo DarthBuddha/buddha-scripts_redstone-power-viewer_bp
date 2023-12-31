@@ -1,9 +1,5 @@
 {
     "format_version": 2,
-    "metadata": {
-        "authors": ["Darth Buddha"],
-        "url": "https://github.com/DarthBuddha/buddha-scripts_redstone"
-    },
     "header": {
         "version": [1, 0, 0],
         "name": "pack.name",
@@ -40,5 +36,10 @@
             "module_name": "@minecraft/server-ui",
             "version": "1.2.0-beta"
         }
-    ]
+    ],
+    "metadata": {
+        "authors": ["Darth Buddha"],
+        "url": "https://github.com/DarthBuddha/buddha-scripts_redstone-power-viewer_bp",
+        "license": "MIT"
+    }
 }
